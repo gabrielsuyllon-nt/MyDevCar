@@ -45,7 +45,7 @@
             border-radius: 8px;
         }
         
-        .rec-dropdown-bar { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+        .rec-dropdown-bar { display: flex; align-items: center; gap: 15px; padding-top: 20px; margin-bottom: 20px; }
         .rec-dropdown-bar h2 { margin: 0; font-size: 1.2em; color: white; }
         
         .rol-select {
@@ -171,19 +171,17 @@
 
     <div class="rec-container">
     
-        <header class="rec-header">
-            <div class="header-title">
-                <div class="icon-bg">
-                    <i class="ph-file-search" style="font-size: 24px; color: white;"></i>
-                </div>
-                <h1>RECOMENDACIONES POR ROL</h1>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <i class="ph-file-search" style="font-size: 36px; color: #007bff;"></i>
+                <span class="navbar-title">RECOMENDACIONES POR ROL</span>
             </div>
             
             <div class="navbar-right">
                 <a href="${pageContext.request.contextPath}/View/home.jsp" class="btn-volver-home">Volver a Inicio</a>
                 <div class="user-initials"><%= iniciales %></div>
             </div>
-        </header>
+        </nav>
 
         <div class="rec-body">
         

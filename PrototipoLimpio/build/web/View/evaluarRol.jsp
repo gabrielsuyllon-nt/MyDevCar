@@ -21,13 +21,14 @@
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/2.8.2/slimselect.min.css" rel="stylesheet"></link>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/2.8.2/slimselect.min.js"></script>
-    
+    <script src="https://unpkg.com/phosphor-icons"></script>
 </head>
 
 <body class="body-home"> 
     
     <nav class="navbar">
         <div class="navbar-left">
+            <i class="ph-note-pencil" style="font-size: 36px; color: #007bff;"></i>
             <span class="navbar-title">Evaluar Rol Objetivo</span>
         </div>
         <div class="navbar-right">
@@ -52,7 +53,7 @@
                 </select>
             </div>
 
-            <hr style="margin-bottom: 2rem;">
+            <hr style="margin-bottom: 1rem;">
 
             <c:forEach var="categoria" items="${habilidadesAgrupadas}">
                 <div class="form-group">
