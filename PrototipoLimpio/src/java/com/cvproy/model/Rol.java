@@ -98,6 +98,30 @@ public class Rol {
         return habilidades;
     }
     
+    public Map<Integer, Set<Integer>> obtenerTodosLosRequisitos() {
+        Map<Integer, Set<Integer>> requisitos = new HashMap<>();
+        String sql = "SELECT id_rol, id_habilidad FROM Rol_Habilidad";
+        
+        try (Connection con = ConexionBD.conectar(); 
+             PreparedStatement ps = con.prepareStatement(sql)) {
+
+            try (ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) {
+                    int idRol = rs.getInt("id_rol");
+                    int idHabilidad = rs.getInt("id_habilidad");
+
+                    if (!requisitos.containsKey(idRol)) {
+                        requisitos.put(idRol, new HashSet<>());
+                    }
+                    requisitos.get(idRol).add(idHabilidad);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return requisitos;
+    }    
 
     public int getIdPorNombre(String nombre) {
         String sql = "SELECT id_rol FROM rol WHERE nombre = ?";
@@ -138,6 +162,5 @@ public class Rol {
             e.printStackTrace();
         }
         return habilidadesMap;
-    }
-    
+    }   
 }
