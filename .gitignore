@@ -1,0 +1,15 @@
+# Archivos compilados (se generan al construir el proyecto)
+PrototipoLimpio/build/
+PrototipoLimpio/dist/
+*.class
+*.war
+
+# Configuración local de NetBeans
+PrototipoLimpio/nbproject/private/
+
+# Variables de entorno y credenciales
+.env
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
