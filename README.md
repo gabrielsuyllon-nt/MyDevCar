@@ -86,8 +86,9 @@ En el servicio, ve a **Environment** y agrega `DB_USER` y `DB_PASSWORD`. Render 
 
 | Integrante | Aportes |
 | --- | --- |
-| Selva Sánchez, Miguel de Jesús ([@m2000pro](https://github.com/m2000pro)) | [completar] |
-| Toro Suyllon, Gabriel David ([@gabrielsuyllon-nt](https://github.com/gabrielsuyllon-nt)) | [completar] |
+| Selva Sánchez, Miguel de Jesús ([@m2000pro](https://github.com/m2000pro)) | Diseño de la base de datos (15 tablas); login y registro con contraseñas cifradas (BCrypt); conexión a la base de datos; reestructuración del código en capas con DAO; resumen de resultados con Chart.js; recomendaciones generales; ventanas de ayuda y configuración. Artículo: requisitos funcionales y no funcionales, patrón de diseño y metodología de desarrollo |
+| Toro Suyllon, Gabriel David ([@gabrielsuyllon-nt](https://github.com/gabrielsuyllon-nt)) | Prototipos de pantallas; menú principal; registro de competencias técnicas por categoría; módulo de registro de roles y habilidades (selección dinámica con JSTL); detalle del resultado por rol, que clasifica las habilidades en fortalezas, brechas y oportunidades con gráficos. Artículo: arquitectura de software, descripción de los módulos y validación funcional con arquetipos de usuario |
+| En conjunto | Revisión sistemática de literatura, recomendaciones por rol, despliegue en la nube y validación con 25 estudiantes |
 
 Asesor y coautor del artículo: Petrlik Azabache, Iván Carlo.
 
